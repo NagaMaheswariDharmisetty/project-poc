@@ -1,0 +1,65 @@
+.header{
+    background-color: #8fd3f4;
+}
+label{
+color:linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+}
+.gender p{
+    color: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+}
+.gender label{
+    color: black;
+}
+.card-bodt{
+    padding:4px;
+}
+.rounded-3 img{
+    border-top-left-radius: .3rem;
+     border-top-right-radius: .3rem;
+     height:250px;
+}
+
+.info{
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.infos h3:before {
+    content: "";
+    display: block;
+    width: 171px;
+    height: 4px;
+    background:linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    left: 73px;
+    top: 7%;
+    position: absolute;
+  }
+  .infos h3:after {
+
+content: "";
+display: block;
+width: 171px;
+height: 4px;
+background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+right: 73px;
+top: 7%;
+position: absolute;
+  }
+.form-check-input:checked {
+    background-color: #8fd3f4;
+    border-color: #8fd3f4;
+}
+.form-check-inline {
+    margin-left: 19px;
+}
+.form-check-label{
+    margin-left:5px;
+}
+.inlines{
+    margin-left:65px;
+}
+  .gradient-custom-4 {
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    border: none;
+    padding: 10px 100px;
+  }
