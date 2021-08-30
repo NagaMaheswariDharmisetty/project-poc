@@ -1,0 +1,35 @@
+.info{
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.infos h3:before {
+    content: "";
+    display: block;
+    width: 171px;
+    height: 4px;
+    background:linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    left: 73px;
+    top: 9%;
+    position: absolute;
+  }
+  .infos h3:after {
+
+content: "";
+display: block;
+width: 171px;
+height: 4px;
+background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+right: 73px;
+top: 9%;
+position: absolute;
+  }
+  .gradient-custom-4 {
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    border: none;
+    padding: 10px 100px;
+  }
+  .form-check-input:checked {
+    background-color: #8fd3f4;
+    border-color: #8fd3f4;
+}

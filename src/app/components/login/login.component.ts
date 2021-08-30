@@ -1,15 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormGroup, FormBuilder } from  '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+contactForm!:FormGroup;
+  constructor(private formBuilder: FormBuilder) { 
+    this.createContactForm();
   }
+  createContactForm(){
+    this.contactForm = this.formBuilder.group({
+      fullName: [''],  
+      email: [''],
+      message: ['']
+    });
+  }
+  ngOnInit(): void {
+    
+  }
+  onSubmit() {
+    console.log('Your form data : ', this.contactForm.value );
+}
 
 }
