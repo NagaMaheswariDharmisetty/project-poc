@@ -1,0 +1,13 @@
+a{
+    
+    text-decoration: none;
+    color: black;
+}
+.heading a{
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.heading a:hover{
+    color: #8fd3f4;
+}

@@ -12,16 +12,17 @@ contactForm!:FormGroup;
   }
   createContactForm(){
     this.contactForm = this.formBuilder.group({
-      fullName: [''],  
-      email: [''],
-      message: ['']
+      userName: [''],  
+      password: [''],
+     
     });
   }
+  onSubmit(){
+    console.log('Your form data : ', this.contactForm.value );
+}
   ngOnInit(): void {
     
   }
-  onSubmit() {
-    console.log('Your form data : ', this.contactForm.value );
-}
+  
 
 }
