@@ -4,9 +4,14 @@ import{ HttpClient} from '@angular/common/http'
   providedIn: 'root'
 })
 export class InfoService {
-Url="https://jsonplaceholder.tyicode.com/posts";
+// Url="https://jsonplaceholder.tyicode.com/posts";
+
   constructor(private http:HttpClient) { }
-  getPosts(){
-    return this.http.get(this.Url);
+  // getPosts(){
+  //   return this.http.get(this.Url);
+  // }
+  getData(){
+    let url="https://jsonplaceholder.typicode.com/posts";
+    return this.http.get(url);
   }
 }

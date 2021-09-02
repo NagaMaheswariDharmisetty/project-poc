@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-// import { InfoService } from ""
-import{ InfoService} from "./shares/service/info.service"
+import{ InfoService} from "./shares/service/info.service";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,10 +7,14 @@ import{ InfoService} from "./shares/service/info.service"
 })
 export class AppComponent {
   title = 'project';
-constructor(private postData:InfoService){}
+constructor(private user:InfoService){
+  this.user.getData().subscribe(data=>{
+    console.log(data)
+  })
+}
   ngOnInit(){
-    this.postData.getPosts().subscribe((result: any)=>{
-      console.warn("result",result)
-    })
+    // this.postData.getPosts().subscribe((result: any)=>{
+    //   console.warn("result",result)
+    // })
   }
 }
